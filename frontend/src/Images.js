@@ -13,7 +13,7 @@ const SearchImage = () => {
         }
 
         try {
-            const response = await axios.get(`http://localhost:5000/images/${searchName}`);
+            const response = await axios.get(`https://image-upload-5nfs.onrender.com/images/${searchName}`);
             setImages(response.data.images);
         } catch (error) {
             console.error(error);

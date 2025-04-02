@@ -17,10 +17,11 @@ const Form = () => {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('http://localhost:5000/upload', formData, {
+            const response = await axios.post('https://image-upload-5nfs.onrender.com/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             alert(response.data.message);
+            console.log(response.data);
             setName('');
             setFile(null);
         } catch (error) {

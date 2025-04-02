@@ -43,7 +43,7 @@ const upload = multer({ storage });
 
 
 app.get('/', async (req, res) => {
-    res.json("Backend work for react todo");
+    res.json("Backend work for react app");
 });
 
 
