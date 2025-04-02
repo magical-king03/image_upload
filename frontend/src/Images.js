@@ -39,7 +39,11 @@ const SearchImage = () => {
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginTop: '10px' }}>
                     {images.map((img, index) => (
                         <div key={index} style={{ margin: '10px', textAlign: 'center' }}>
-                            <img src={img.imagePath} alt={img.name} style={{ margin:"20px", width:"90%",height:"100%"  }} />
+                            <img 
+                                src={`https://image-upload-5nfs.onrender.com${img.imagePath}`}  
+                                alt={img.name} 
+                                style={{ margin: "20px", width: "90%", height: "100%" }} 
+                            />
                         </div>
                     ))}
                 </div>
